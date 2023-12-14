@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --color1: #05DBF2;
+    --color2: #A7EBF2;
+    --color3: #F2F2F2;
+    --color4: #A6A6A6;
+    --color5: #595959;
+    --color6: #232323;
+}
+
+body {
+    background-color: var(--color6);
+    color: var(--color3);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    background-color: var(--color6);
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--color1);
+    min-width: 30%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 130px;
+}
+
+header p {
+    text-align: center;
+    color: var(--color3);
+}
+
+main {
+    max-width: 1366px;
+    height: auto;
+    margin: 30px auto;
+}
+
+.instrution {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 60px;
+    background-color: var(--color5);
+}
+
+.instrution h2 {
+    color: var(--color1);
+}
+
+.instrution ul {
+    padding: 20px;
+    list-style: decimal;
+}
+
+.instrution ul li {
+    padding: 5px 0px;
+}
+
+.instrution ul li strong {
+    color: var(--color1);
+    text-decoration: underline;
+}
+
+.instrution ul li .default {
+    color: var(--color1);
+    text-decoration: none;
+}
+
+.painel {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.painel .box-inputs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.painel .box-inputs #link {
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.painel .box-inputs #btn {
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--color6);
+    color: var(--color3);
+    border-radius: 10px;
+    border: 2px solid var(--color1);
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.painel .box-inputs #btn:hover {
+    background-color: var(--color1);
+    color: var(--color6);
+    border: 2px solid var(--color1);
+}
+
+.painel .video {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.painel .video iframe {
+    border-radius: 10px;
+    max-width: 560px;
+}
+
+/* Adicione estilo para o indicador de carregamento */
+.painel .video .loading {
+    display: none;
+    color: var(--color1);
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+footer img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 320px) {
+    .painel .box-inputs {
+        flex-direction: column;
+    }
+
+    .painel .video iframe {
+        height: auto;
+        width: 280px;
+    }
+
+    .instrution h2 {
+        text-align: center;
+    }
+
+    .painel .box-inputs #link {
+        width: 280px;
+    }
+
+    header h1 {
+        margin-top: 160px;
+    }
+}

@@ -31,6 +31,6 @@ button_inserir.addEventListener("click", inserirVideo);
 // Função para obter o ID do vídeo do YouTube a partir do URL
 function getYouTubeVideoId(url) {
     // Extrai o ID do vídeo da URL do YouTube
-    let match = url.match(/[?&]v=([^?&]+)/);
+    let match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);
     return match ? match[1] : "";
 }

@@ -24,7 +24,7 @@ a {
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +33,7 @@ body {
     color: #fff;
 }
 
-.netflix-container {
+.container {
     max-width: 800px;
     width: 100%;
     margin: 20px;
@@ -95,4 +95,22 @@ iframe {
     width: 100%;
     height: 360px;
     border: none;
+}
+
+.ads-container {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.ads-container .ads {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.ads-container .ads img {
+    width: 100%;
+    height: auto;
 }

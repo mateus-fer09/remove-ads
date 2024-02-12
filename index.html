@@ -14,9 +14,12 @@
         </header>
     
         <div class="video-panel">
-            <input type="text" id="link" placeholder="Insira o link do vídeo do YouTube">
-            <button id="btn">Inserir Vídeo</button>
-            <div class="video-container"></div>
+            <input type="text" id="link" placeholder="Insira o link do vídeo do YouTube" aria-label="Insira o link do vídeo do YouTube">
+            <button id="btn" aria-label="Inserir Vídeo">Inserir Vídeo</button>
+            <div class="video-container" aria-live="polite">
+                <div class="loading-spinner"></div>
+            </div>
+            <div class="message-container" aria-live="assertive"></div>
         </div>
     </div>
     <div class="ads-container">

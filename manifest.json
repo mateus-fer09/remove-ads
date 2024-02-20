@@ -1,0 +1,23 @@
+{
+  "background_color": "#111111",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Remove Ads",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Remove Ads",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "upload/favicon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "id": "remove-ads",
+  "lang": "pt",
+  "categories": [
+    "entertainment"
+  ]
+}

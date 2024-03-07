@@ -1,44 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-bt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-3495721409683621">
-    <title>Remove Ads</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="upload/android-launchericon-512-512.png" type="image/png">
+    <title>REMOVE ADS - VERSION 2.0</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-mobile.css">
+    <link rel="shortcut icon" href="assets/icons/ytb.svg" type="image/svg-xml">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h2>Remove Ads - <a href="https://www.instagram.com/mateuss_hen09/" target="_blank">👉 @mateuss_hen09</a></h2>
-        </header>
-    
-        <div class="video-panel">
-            <input type="text" id="link" placeholder="Insira o link do vídeo do YouTube" aria-label="Insira o link do vídeo do YouTube">
-            <button id="btn" aria-label="Inserir Vídeo">Inserir Vídeo</button>
-            <div class="video-container" aria-live="polite">
-                <div class="loading-spinner"></div>
+
+    <div class="nav-left">
+        <div class="nav-left-content">
+            <div class="title-content">
+                <span>Painel de Versões</span>
+                <i class="bi bi-braces"></i>
             </div>
-            <div class="message-container" aria-live="assertive"></div>
+
+            <div class="separate"></div>
+
+            <div class="box-buttons">
+                <button id="version1">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>Versão 1.0</span>
+                </button>
+                <button id="version2" disabled>
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>Versão 2.0</span>
+                </button>
+            </div>
+
+            <button id="close-nav">
+                <i class="bi bi-x-circle"></i>
+                <span>Fechar Menu</span>
+            </button>
         </div>
     </div>
-    <div class="ads-container">
-        <a href="https://www.amazon.com.br/gp/browse.html?node=16364755011&amp;ref_=nav_em__pc_laptops_0_2_17_3&_encoding=UTF8&tag=mateussfer002-20&linkCode=ur2&linkId=4700afeb65e0e2aa68d0ac09d0a1dce9&camp=1789&creative=9325" target="_blank">
-            <div class="ads">
-                <img src="upload/1.png" alt="Ofertas de Notebook">
-            </div>
+    <div class="nav-mobile">
+        <a href="index.html">
+            <i class="bi-play"></i>
         </a>
+        <button id="open-nav">
+            <i class="bi bi-list"></i>
+        </button>
     </div>
-    <script src="js/index.js"></script> 
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DWCBK5P7YH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-DWCBK5P7YH');
-</script>
+    <main>
+        <section class="outdoor">
+            <h1>Remove Ads</h1>
+            <p>Aproveite seus vídeos sem anúncios</p>
+        </section>
+
+        <section class="version1">
+            <div class="painel">
+                <div class="input-link">
+                    <i class="bi-search"></i>
+                    <input type="text" id="link" placeholder="Insira o link do vídeo do YouTube" aria-label="Insira o link do vídeo do YouTube" autocomplete="off">
+                </div>
+                <div class="btn-inserir">
+                    <button id="btn" aria-label="Inserir Vídeo">Inserir Vídeo</button>
+                </div>
+                <div class="video-container" aria-live="polite">
+                    <div class="loading-spinner"></div>
+                </div>
+                <div class="message-container" aria-live="assertive"></div>
+            </div>
+        </section>
+        <section class="version2"></section>
+    </main>
+
+    <script src="js/index.js"></script>
+    <script src="js/version1.0.js"></script>
+    <script src="js/version2.0.js"></script>
 </body>
 </html>

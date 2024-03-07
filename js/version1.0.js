@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 ocultarLoading(); // Oculta o indicador de carregamento
                 exibirMensagem("Vídeo inserido com sucesso!");
-            }, 2000); // Simula um atraso para representar o carregamento do vídeo
+            }, 1000 / 2); // Simula um atraso para representar o carregamento do vídeo
         } else {
             exibirMensagem("Link do vídeo inválido. Por favor, insira um link válido.");
         }

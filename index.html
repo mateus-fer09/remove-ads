@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index-mobile.css">
     <link rel="shortcut icon" href="assets/icons/ytb.svg" type="image/svg-xml">
+    <style>
+         .loader {
+        border: 8px solid #f3f3f3; /* Light grey */
+        border-top: 8px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    </style>
 </head>
 <body>
 
@@ -24,7 +41,7 @@
                     <i class="bi bi-box-arrow-in-right"></i>
                     <span>Versão 1.0</span>
                 </button>
-                <button id="version2" disabled>
+                <button id="version2">
                     <i class="bi bi-box-arrow-in-right"></i>
                     <span>Versão 2.0</span>
                 </button>
@@ -66,7 +83,19 @@
                 <div class="message-container" aria-live="assertive"></div>
             </div>
         </section>
-        <section class="version2"></section>
+        <section class="version2">
+            <div class="pesquisa">
+                <form id="video-search-form">
+                    <input type="text" name="pesquisar" id="pesquisar" placeholder="O que você quer assistir hoje..." autocomplete="off">
+                    <button type="submit" id="buttonPesquisa">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="content-videos" id="search-results">
+                <div class="text-alerta" style="text-align: center;"></div>
+            </div>
+        </section>
     </main>
 
     <script src="js/index.js"></script>

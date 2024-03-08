@@ -19,10 +19,6 @@ A versão 2.0 implementa a API do YouTube, permitindo que os usuários realizem 
 3. Clique no botão "Inserir vídeo".
 4. Na versão 2.0, use a barra de pesquisa para encontrar vídeos relacionados ao tema de sua escolha.
 
-## Contribuições
-
-Contribuições para o projeto são bem-vindas. Por favor, leia as diretrizes de contribuição antes de enviar uma solicitação pull.
-
 ## Licença
 
 Este projeto está licenciado sob a licença MIT.

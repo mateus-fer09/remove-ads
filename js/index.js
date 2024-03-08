@@ -8,11 +8,24 @@ function closeNav() {
     nav.style.width = "0px"
 }
 
-let buttonOpen = document.getElementById("open-nav")
+const buttonOpen = document.getElementById("open-nav")
 buttonOpen.addEventListener("click", openNav)
 
-let buttonClose = document.getElementById("close-nav")
+const buttonClose = document.getElementById("close-nav")
 buttonClose.addEventListener("click", closeNav)
+
+const buttonsAncoras = document.querySelectorAll(".ancora");
+
+function closeNavMobile() {
+    let nav = document.querySelector(".nav-left");
+    if (window.innerWidth <= 800) {
+        nav.style.width = "0px";
+    }
+}
+
+buttonsAncoras.forEach((Element) => {
+    Element.addEventListener("click", closeNavMobile);
+});
 
 
 const button1 = document.querySelector("#version1")

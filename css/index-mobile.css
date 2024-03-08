@@ -26,6 +26,11 @@
         margin-top: 50px;
     }
 
+    .nav-left .nav-left-content #close-nav:hover {
+        background-color: var(--color1);
+        color: var(--color5);
+    }
+
     .nav-left .nav-left-content #close-nav .bi {
         margin-right: 10px;
     }
@@ -34,7 +39,7 @@
         display: block;
         width: 100%;
         height: auto;
-        padding: 20px;
+        padding: 10px 20px;
         background-color: var(--background-secundary);
         display: flex;
         align-items: center;

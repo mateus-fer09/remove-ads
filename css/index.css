@@ -54,6 +54,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    position: relative;
 }
 
 .nav-left .nav-left-content .title-content {
@@ -108,6 +109,26 @@ body {
     display: none;
 }
 
+.nav-left .nav-left-content #about {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color2);
+    color: var(--color1);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 260px;
+}
+
+.nav-left .nav-left-content #about .bi {
+    font-size: 1.3em;
+}
+
 .nav-mobile {
     display: none;
 }
@@ -139,6 +160,22 @@ main {
     border-radius: 20px;
     margin-top: 40px;
     padding: 10px;
+}
+
+.version1 .instrution {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.version1 .instrution .title {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.version1 .instrution .title span {
+    color: var(--color1);
 }
 
 .version1 .painel {
@@ -233,6 +270,30 @@ main {
     margin-top: 40px;
     display: none;
     padding: 20px;
+}
+
+.version2 {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.version2 .instrution {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.version2 .instrution .title {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.version2 .instrution .title span {
+    color: var(--color1);
 }
 
 .version2 .pesquisa {
